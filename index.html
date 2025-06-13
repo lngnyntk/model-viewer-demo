@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Model Viewer Demo</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background: #f4f4f4;
+        font-family: sans-serif;
+      }
+      model-viewer {
+        width: 100%;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Demo Model 3D dengan &lt;model-viewer&gt;</h1>
+    <model-viewer
+      src="model.glb"
+      alt="A 3D model"
+      auto-rotate
+      camera-controls
+      ar
+    ></model-viewer>
+  </body>
+</html>
